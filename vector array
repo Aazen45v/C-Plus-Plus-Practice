@@ -29,5 +29,27 @@ int main() {
     cout<<test_scores.at(1)<<endl;
     cout<<test_scores.at(2)<<endl;
     
+    
+    cout<<"\nEntering Test scores to add to vector using vector syntax:"<<endl;
+    int score_to_add{0};
+    cin>>score_to_add;
+    test_scores.push_back(score_to_add);
+    cout<<"\nTest scores are now:" << endl;
+    cout<<test_scores.at(0)<<endl;
+    cout<<test_scores.at(1)<<endl;
+    cout<<test_scores.at(2)<<endl;
+    cout<<test_scores.at(3)<<endl;
+    
+    
+    cout<<"\nEntering One more Test scores to add to vector using vector syntax:"<<endl;
+    cin>>score_to_add;
+    test_scores.push_back(score_to_add);
+    cout<<test_scores.at(0)<<endl;
+    cout<<test_scores.at(1)<<endl;
+    cout<<test_scores.at(2)<<endl;
+    cout<<test_scores.at(3)<<endl;
+    cout<<test_scores.at(4)<<endl;
+    cout<<"\nThere are now "<<test_scores.size()<<" scores in vector"<<endl;
+    
     return 0;
 }
