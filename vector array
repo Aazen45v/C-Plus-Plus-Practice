@@ -1,0 +1,33 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+#include <vector>
+
+int main() {
+    // Write C++ code here
+    
+    vector <int> test_scores{100,98,89};
+    cout<<"\nTest scores using array:"<<endl;
+    cout<<test_scores[0]<<endl;
+    cout<<test_scores[1]<<endl;
+    cout<<test_scores[2]<<endl;
+    cout<<test_scores.size()<<"scores in vector"<<endl;
+    
+    
+    cout<<"\nTest scores using vector syntax:"<<endl;
+    cout<<test_scores.at(0)<<endl;
+    cout<<test_scores.at(1)<<endl;
+    cout<<test_scores.at(2)<<endl;
+    
+    
+    cout<<"\nEntering Test scores using vector syntax:"<<endl;
+    cin>>test_scores.at(0);
+    cin>>test_scores.at(1);
+    cin>>test_scores.at(2);
+    cout<<"\nUpdated test scores are:"<<endl;
+    cout<<test_scores.at(0)<<endl;
+    cout<<test_scores.at(1)<<endl;
+    cout<<test_scores.at(2)<<endl;
+    
+    return 0;
+}
