@@ -27,6 +27,5 @@ int main() {
     cout << "Dimes: " << dimes << '\n';
     cout << "Nickels: " << nickels << '\n';
     cout << "Pennies: " << pennies << '\n';
-
     return 0;
 }
