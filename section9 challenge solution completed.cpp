@@ -12,6 +12,7 @@ int main(){
         cout<<"A-to add a number in array"<<endl;
         cout<<"S-to sum all the integers in the array"<<endl;
         cout<<"M-to find the mean of the array"<<endl;
+        cout<<"D-to find the smallest number"<<endl; // added menu option
         cout<<"L-to find the largest number"<<endl;
         cout<<"Q-quit"<<endl;
         cout<<"\nEnter your selected option: ";
@@ -69,6 +70,17 @@ int main(){
                 sort(numbers.begin(), numbers.end()); // sort the vector
                 int largest_element = numbers[numbers.size()-1]; // get the largest element
                 cout<<"The largest element in the array is: "<< largest_element << endl;
+            }
+        }
+        else if(selection=='d' || selection =='D') // added new condition
+        {
+            if(numbers.size()==0)
+                cout<<"unable to find the smallest number in the array"<<endl;
+            else
+            {
+                sort(numbers.begin(), numbers.end()); // sort the vector
+                int smallest_element = numbers[0]; // get the smallest element
+                cout<<"The smallest element in the array is: "<< smallest_element << endl;
             }
         }
     } while(selection!='q'&& selection!='Q');
