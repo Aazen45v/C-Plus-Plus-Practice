@@ -3,24 +3,24 @@ using namespace std;
 
 int main() {
   // printing hollow rectangle
-  int n,m,i;
+  int rowCount,colmCount;
   cout<<"Enter the no of rows: ";
-  cin>>n;
+  cin>>rowCount;
   cout<<"Enter the no of columns: ";
-  cin>>m;
-  for(int row = 0;row<n;row++)
+  cin>>colmCount;
+  for(int row = 0;row<rowCount;row++)
   {
-    if(row==0 || row==n-1)
+    if(row==0 || row==rowCount-1)
     {
-      for(int col=0;col<m;col++)
+      for(int col=0;col<colmCount;col++)
       {
-        cout<<"* ";
+        cout<<"*";
       }
     } 
     else 
     {
-      cout<<"* ";
-      for(i = 0 ;i < m+3; i++)
+      cout<<"*";
+      for(int col = 0 ;col < colmCount-2; col++)
       {
         cout<<" ";
       }
