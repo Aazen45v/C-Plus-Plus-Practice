@@ -17,8 +17,14 @@ int main() {
     }
   }
 
-  for(int k=0;k<ans.size();k++){
-    cout<<ans[k]<<" ";
+//   for(int k=0;k<ans.size();k++){
+//     cout<<ans[k]<<" ";
+//   }
+//   cout<<endl;
+// }
+
+  for(auto value:ans){
+    cout<<value<<" ";
   }
   cout<<endl;
 }
