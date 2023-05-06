@@ -12,6 +12,7 @@ int main() {
 
   for(int j=0;j<brr.size();j++){
     if(element==brr[j]){
+      brr[j]=-1;
       ans.push_back(element);
       }
     }
