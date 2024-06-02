@@ -9,6 +9,7 @@ vector<int> IntersectionOfArray(vector<int> arr, vector<int> brr) {
       for(int j=0;j<brr.size();j++){
         if(arr[i] == brr[j]){
           ans.push_back(arr[i]);
+          brr[j] = -1;
         }
       }
     }
