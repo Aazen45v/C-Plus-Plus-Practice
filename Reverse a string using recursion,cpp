@@ -1,0 +1,19 @@
+#include <iostream>
+#include <limits.h>
+#include <vector>
+using namespace std;
+
+void reverse(string str,int n){
+    if(n<0){
+        return;
+    }
+    cout<<str[n];
+    return reverse(str,n-1);
+}
+
+int main() {
+    string str="HELLOW HOW ARE YOU";
+    int n=str.length();
+    int i=0;
+    reverse(str,n);
+}
