@@ -31,7 +31,6 @@ int exponentialSearch(vector<int> &arr, int n, int x){
   return bs(arr,i/2,min(i,n-1),x);
 }
 
-
 int main() {
   vector<int> arr{3,4,5,6,11,13,14,15,56,70};
   int n = arr.size()-1;
